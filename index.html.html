@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dreamy Decorations</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+
+        header {
+            background-color: #f4c2c2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+            color: #5a3030;
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a84d4d;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 500px;
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                  url("sirio-hm3efUMoReg-unsplash.jpg");
+
+                
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+            color: white;
+            padding: 30px;
+        }
+
+        .hero h2 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin-bottom: 25px;
+        }
+
+        /* BUTTON */
+
+        .button {
+            display: inline-block;
+            background-color: #d47b7b;
+            color: white;
+            text-decoration: none;
+            padding: 13px 28px;
+            border-radius: 30px;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .button:hover {
+            background-color: #a84d4d;
+        }
+
+        /* GENERAL SECTION */
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            color: #8b4a4a;
+            margin-bottom: 20px;
+        }
+
+        /* STORY */
+
+        .story {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .story p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        /* SERVICES */
+
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            width: 280px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px #ddd;
+        }
+
+        .card h3 {
+            color: #9b5555;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .card p {
+            font-size: 16px;
+        }
+
+        /* GALLERY */
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px #ccc;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+
+        /* CONTACT */
+
+        .contact {
+            background-color: #fde5e5;
+        }
+
+        .contact p {
+            font-size: 18px;
+            margin: 8px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: #f4c2c2;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .gallery img {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>✨ Aurora Decor ✨</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#story">Our Story</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HOME -->
+
+    <section class="hero" id="home">
+
+        <h2>Making Your Moments Beautiful</h2>
+
+        <p>
+            Beautiful decorations for birthdays, weddings,
+            baby showers and special celebrations.
+        </p>
+
+        <!-- CLICKABLE BOOK NOW BUTTON -->
+
+        <a href="#contact" class="button">
+            🎉 Book Now
+        </a>
+
+    </section>
+
+
+    <!-- OUR STORY -->
+
+    <section id="story">
+
+        <h2>💕 Our Story</h2>
+
+        <div class="story">
+
+            <p>
+                Welcome to Aurora Decor!
+            </p>
+
+            <p>
+                We started with a simple idea — to make every
+                special occasion beautiful and memorable.
+            </p>
+
+            <p>
+                From small birthday parties to beautiful weddings,
+                we love creating decorations that match your style,
+                personality and special moments.
+            </p>
+
+            <p>
+                Our team pays attention to every little detail
+                because we believe that beautiful decorations
+                make beautiful memories.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SERVICES -->
+
+    <section id="services">
+
+        <h2>🎈 Our Services</h2>
+
+        <div class="services">
+
+            <div class="card">
+
+                <h3>🎂 Birthday Decoration</h3>
+
+                <p>
+                    Balloon decorations, birthday backdrops,
+                    tables and beautiful party setups.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>💍 Wedding Decoration</h3>
+
+                <p>
+                    Elegant wedding decorations, flowers,
+                    backdrops and reception styling.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>👶 Baby Shower</h3>
+
+                <p>
+                    Beautiful balloon arches, welcome signs
+                    and decorations for baby showers.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>🎉 Event Decoration</h3>
+
+                <p>
+                    Custom decorations for parties,
+                    celebrations and special events.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GALLERY -->
+
+    <section id="gallery">
+
+        <h2>📸 Our Gallery</h2>
+
+        <p>
+            Some decoration ideas for your special day.
+        </p>
+
+        <br>
+
+        <div class="gallery">
+
+            <img
+                src="https://images.unsplash.com/photo-1464349153735-7db50ed83c84?auto=format&fit=crop&w=800&q=80"
+                alt="Birthday decoration">
+
+            <img
+                src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80"
+                alt="Wedding decoration">
+
+            <img
+                src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=80"
+                alt="Party decoration">
+
+            <img
+                src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=800&q=80"
+                alt="Event decoration">
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+
+        <h2>📞 Contact Us</h2>
+
+        <p>
+            Ready to make your event beautiful?
+        </p>
+
+        <br>
+
+        <p>📱 Phone: 0413001614</p>
+
+        <p>📧 Email: bhawanagrg889@gmail.com</p>
+
+        <p>📍 Adelaide, South Australia</p>
+
+        <br>
+
+
+        <!-- CLICKABLE EMAIL BUTTON -->
+
+        <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=bhawanagrg889@gmail.com"
+   class="button"
+   target="_blank">
+    ✉️ Contact Us
+</a>
+</a>
+        </a>
+
+
+        <!-- CLICKABLE BOOKING BUTTON -->
+
+        <a
+             href="https://wa.me/0413001614" class="button" target="_blank">
+    🎉 Book Now
+</a>
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Aurora Decor | Adelaide
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
+
+
